@@ -1,0 +1,18 @@
+[
+    {
+      "label": "Carnes",
+      "id": 1
+    },
+    {
+      "label": "Vegan",
+      "id": 2
+    },
+    {
+      "label": "Bebidas",
+      "id": 3
+    },
+    {
+      "label": "Doces",
+      "id": 4
+    }
+  ]
