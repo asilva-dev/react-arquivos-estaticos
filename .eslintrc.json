@@ -18,13 +18,14 @@
         "react"
     ],
     "rules": {
+        "react/react-in-jsx-scope": "off",
         "indent": [
             "error",
-            4
+            "tab"
         ],
         "linebreak-style": [
             "error",
-            "windows"
+            "unix"
         ],
         "quotes": [
             "error",
@@ -34,5 +35,11 @@
             "error",
             "always"
         ]
+    },
+    "settings": {
+        "react": {
+          "version": "detect"
+        }
     }
+    
 }

@@ -1,12 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "normalize.css";
-import "./index.css";
-import Cardapio from "./pages/Cardapio";
+import 'normalize.css';
+import './index.css';
+import Cardapio from './pages/Cardapio';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Cardapio />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const rootElement = document.getElementById('root');
+if (rootElement) {
+	const root = createRoot(rootElement);
+
+	root.render(
+		<StrictMode>
+			<Cardapio />
+		</StrictMode>,
+	);
+} else {
+	console.error('Element with id "root" not found');
+}
+
+
